@@ -9,9 +9,9 @@ const CollisionBox: React.FC<CollisionBoxProps> = ({ isColliding }) => {
   return (
     <div
       className={cn(
-        "absolute w-20 h-20 transition-opacity duration-300",
-        isColliding ? "opacity-100" : "opacity-0",
-        "bg-[#ea384c] rounded-lg shadow-lg"
+        "absolute w-20 h-20 transition-opacity duration-300 rounded-full",
+        "bg-blue-200/20 backdrop-blur-sm",
+        isColliding ? "opacity-100 animate-glow" : "opacity-0",
       )}
       style={{ right: '20%', top: '50%', transform: 'translate(50%, -50%)' }}
     />

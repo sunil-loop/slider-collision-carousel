@@ -55,12 +55,31 @@
     }
   }
 
+  @keyframes glow-pulse {
+    0% {
+      opacity: 0.4;
+      box-shadow: 0 0 20px 10px rgba(147, 197, 253, 0.3);
+    }
+    50% {
+      opacity: 0.7;
+      box-shadow: 0 0 30px 15px rgba(147, 197, 253, 0.5);
+    }
+    100% {
+      opacity: 0.4;
+      box-shadow: 0 0 20px 10px rgba(147, 197, 253, 0.3);
+    }
+  }
+
   .animate-slide-horizontal {
     animation: slide-horizontal 8s linear infinite;
   }
 
   .animate-slide-vertical {
     animation: slide-vertical 8s linear infinite;
+  }
+
+  .animate-glow {
+    animation: glow-pulse 2s ease-in-out infinite;
   }
 }
 
