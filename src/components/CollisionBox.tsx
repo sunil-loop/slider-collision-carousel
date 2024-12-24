@@ -13,7 +13,7 @@ const CollisionBox: React.FC<CollisionBoxProps> = ({ isColliding }) => {
         "bg-blue-200/20 backdrop-blur-sm",
         isColliding ? "opacity-100 animate-glow" : "opacity-0",
       )}
-      style={{ right: '20%', top: '50%', transform: 'translate(50%, -50%)' }}
+      style={{ right: '45%', top: '45%', transform: 'translate(50%, -50%)' }}
     />
   );
 };

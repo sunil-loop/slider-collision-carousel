@@ -33,11 +33,11 @@ const Index = () => {
     <div className="relative w-screen h-screen overflow-hidden bg-gray-50">
       <Slider 
         direction="horizontal" 
-        className="top-1/2 -translate-y-1/2"
+        className="top-[45%] -translate-y-1/2"
       />
       <Slider 
         direction="vertical" 
-        className="right-[20%] translate-x-1/2"
+        className="right-[45%] translate-x-1/2"
       />
       <CollisionBox isColliding={isColliding} />
     </div>
