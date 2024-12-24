@@ -22,7 +22,7 @@ const Slider: React.FC<SliderProps> = ({ direction, className }) => {
       className
     )}>
       <div className={cn(
-        "flex gap-4 absolute",
+        "flex gap-0 absolute",
         direction === 'vertical' ? 
           'flex-col animate-slide-vertical' : 
           'animate-slide-horizontal'
@@ -33,7 +33,7 @@ const Slider: React.FC<SliderProps> = ({ direction, className }) => {
             src={src}
             alt={`Slide ${index + 1}`}
             className={cn(
-              "object-cover rounded-lg shadow-lg",
+              "object-cover",
               direction === 'vertical' ? 'w-40 h-40' : 'w-40 h-40'
             )}
           />

@@ -56,11 +56,11 @@
   }
 
   .animate-slide-horizontal {
-    animation: slide-horizontal 10s linear infinite;
+    animation: slide-horizontal 8s linear infinite;
   }
 
   .animate-slide-vertical {
-    animation: slide-vertical 10s linear infinite;
+    animation: slide-vertical 8s linear infinite;
   }
 }
 

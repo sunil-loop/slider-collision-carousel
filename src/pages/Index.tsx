@@ -7,12 +7,16 @@ const Index = () => {
 
   useEffect(() => {
     const checkCollision = () => {
-      // Collision occurs every 5 seconds due to the animation timing
+      // Collision occurs every 4 seconds (half of the 8s animation cycle)
       setIsColliding(true);
       setTimeout(() => setIsColliding(false), 1000);
     };
 
-    const interval = setInterval(checkCollision, 5000);
+    // Initial collision check
+    setTimeout(checkCollision, 2000);
+    
+    // Set up recurring collision checks
+    const interval = setInterval(checkCollision, 4000);
     return () => clearInterval(interval);
   }, []);
 
